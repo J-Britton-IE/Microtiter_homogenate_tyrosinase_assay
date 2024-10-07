@@ -1,2 +1,15 @@
 This repository contains all code necessary for the Microtiter homogenate tyrosinase activity assay. 
+Three python scripts are included:
+1) Enzyme_activity_colourometric_analysis.py - the main script for analysis and display of data 
+2) activity_analysis.py - the script which contains the function for the above analysis.
+3) split.py - a small library of bioinformatics based functions made by James and used in the above scripts.
 All code is written in Python and requires the following dependencies:
+- PySimpleGUI
+- numpy
+- pandas
+- matplotlib
+- matplotlib.pyplot
+- matplotlib.backends.backend_tkagg
+- scipy
+- os
+- xlsxwriter
