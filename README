@@ -13,3 +13,20 @@ All code is written in Python and requires the following dependencies:
 - scipy
 - os
 - xlsxwriter
+
+An excel file with data generated during a microtiter tyrosinase activity assay is included. To use download the file and select it within the software GUI using the "Select File" button. 
+Then details of the run must be entered:
+
+Parameters box:
+Molar Ex-coef = The molar extinction coefficient of the Quinone product of tyrosinase action. For Tyrosol it is 716 M−1⋅cm−1. Enter 716.
+
+Replicates = The number of replicates of each sample loaded to the plate. In all assays three wells were loaded for homogenate from each flask and homogenates from three flasks were used for each plate. So enter 9.
+
+Stepwidth = The number of timepoints across which the rate of catalysis is calculated. Readings are taken every 30 seconds, therefore a stepwith of 10 means the rate is calculated in 5 minute blocks. The program calculates the rate starting from every timepoint so from 0-5 min, 30s - 5.30, 1 min - 6 min etc.
+
+R2 limit = The minimum R squared value (coefficient of determination) allowed rate calculations. The software takes the values in each "stepwitdh" range from above eg. 1 min to 6 min, 2 min - 7 min etc and calculates the quinone formation rate of each sample at each concentration of homogenate protein loaded. So for the 1 min to 6 min time range the mean quinone formation rate would be calculated for all 9 samples at each homogenate protein concentration tested. Using the calculated quinone formation rates for each time range the quinone formation rate of each loaded protein concentration are plotted on the Y-axis against the protein concentration on the X-axis. When the data is analysed this can be seen in the data tab "Linearity". To ensure there is a strong correllation between the concentration of homogenate protein loaded to a well and the quinone formation rate, the R2 limit should be set to 0.9 or above. 
+
+Row Conc. box:
+Within this box the concentration of homogenate protein loaded to each row of the microtiter plate should be entered in ug/mL per mM tyrosol substrate. So for example if in Row B 1 ug/mL/mM was loaded and 10 mM tyrosol was used as substrate then 10ug of protein per mL, since the final volume of each well is 0.2 mL then 10*0.2ug protein should be added = 2 ug. For this assay Row B had 1 ug/mL/mM, Row C had 2 ug/mL/mM and Row D had 4 ug/mL/mM.
+
+Next press analyse and then Plot. You should see the graphs appear.
