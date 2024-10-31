@@ -20,7 +20,7 @@ Then details of the run must be entered:
 Parameters box:
 Molar Ex-coef = The molar extinction coefficient of the Quinone product of tyrosinase action. For Tyrosol it is 716 M−1⋅cm−1. Enter 716.
 
-Replicates = The number of replicates of each sample loaded to the plate. In all assays three wells were loaded for homogenate from each flask and homogenates from three flasks were used for each plate. So enter 9.
+Replicates = The number of replicates of each sample loaded to the plate. In this assays two wells were loaded for homogenate from each flask and homogenates from three flasks were used for each plate. So enter 6.
 
 Stepwidth = The number of timepoints across which the rate of catalysis is calculated. Readings are taken every 30 seconds, therefore a stepwith of 10 means the rate is calculated in 5 minute blocks. The program calculates the rate starting from every timepoint so from 0-5 min, 30s - 5.30, 1 min - 6 min etc.
 
